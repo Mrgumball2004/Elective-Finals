@@ -55,15 +55,16 @@ section {
 
 /* Header style section */
 .home {
-    background-color: #566573;
+    background-color: #283747;
     text-align: center;
     padding: 50px 0;
 }
 
 .about {
-    background-color: #e6e6e6;
+    background-color: #3b5066;
     text-align: center;
     padding: 50px 0;
+    color: white;
 }
 
 .textsaabout {
@@ -84,16 +85,14 @@ section {
 }
 
 
-
-
-
-
-
-
 .resume {
-    background-color: #999999;
+    background-color: #283747;
     text-align: center;
     padding: 50px 0;
+    color: white;
+}
+.resume_black{
+    color: black;
 }
 
 
@@ -120,6 +119,7 @@ input {
     text-align: center;
     color: black;
     padding: 10px 0;
+    border-radius: 8px;
 }
 
 .social-icons {
@@ -175,10 +175,11 @@ input {
 
 .projects {
     text-align: center;
+
   }
   
   .project_background {
-    background-color: #d9d9d9;
+    background-color: #3c5875;
     text-align: center;
     padding: 50px 0;
 }
@@ -187,7 +188,7 @@ input {
   .project-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 2px;
+    margin-top: 22px;
   }
   
   .project {
@@ -197,12 +198,71 @@ input {
     transition: all 0.3s ease;
   }
   
+   
   .project:hover {
     background-color: #566573;
     color: #fff;
     transform: translateY(-5px);
     box-shadow: 0 25px 8px rgba(0, 0, 0, 0.1);
+   
   }
+
+  .project {
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    background-color: #566573;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 25px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project:hover a {
+    color: #85C1E9;
+}
+ 
+
+/* Social Media Links */
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    justify-content: center;
+    
+    
+}
+
+.icon-link {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+
+.icon {
+    width: 70px; /* Adjust the size of the icons */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10%; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-link:hover .icon {
+    transform: translateY(-5px); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+    background-color:  #34495E;
+}
+
 
 
  /* More info sytles buttons section */
@@ -224,4 +284,21 @@ input {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
  
+.Resume-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color:  #ffffff;
+    transition: all 0.3s ease;
+    background-color: #566573; 
+    border: none;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.Resume-button:hover {
+    color:   #85C1E9;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
   
